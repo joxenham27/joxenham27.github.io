@@ -1,0 +1,145 @@
+/*CSS DOCUMENT*/
+
+img {
+    width: 100%;
+}
+
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
+div.container{
+    margin: auto;
+}
+
+
+body{
+    background-color: #8C6C42;
+    font-family: "brother-1816", sans-serif;
+    color: rgb(0,0,0);
+}
+
+
+h2{
+	font-family: "komu-a", sans-serif;
+	font-size: 2.5em;
+    letter-spacing: .1em;
+
+}
+
+h3{
+    font-family: "komu-a", sans-serif;
+    letter-spacing: .1em;
+    color: rgb(0,0,0);
+    padding-bottom: .5em;
+    border-bottom: 2px solid rgb(70,70,70);
+}
+
+.price{
+
+    font-family: brother-1816-printed,sans-serif;
+    font-style: italic;
+}
+
+
+
+nav ul{
+    background-color: rgb(70,70,70);
+    padding: 1em;
+    word-spacing: 4em;
+}
+
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+
+}
+nav ul li a{
+    color: rgb(0,0,0);
+    text-decoration: none;   
+}
+
+nav ul li a:hover{
+    color: rgb(255,255,255);
+}
+
+ul.menuItems {
+    display:grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: auto auto auto;
+
+}
+
+.ipa{
+    background color:rgb(255,255,255);
+    margin:1.5em;
+    padding-bottom: 2em;
+
+}
+
+.sour{
+    background color:rgb(255,255,255);
+   margin: 1.5em;
+   padding-bottom: 2em;
+}
+
+.ale{
+     background color:rgb(255,255,255);
+   margin:1.5em;
+   padding-bottom: 2em;
+}
+
+.light{
+     background color:rgb(255,255,255);
+     margin:1.5em;
+     padding-bottom: 2em;
+}
+
+
+
+
+
+
+
+footer{ 
+    font-family: "brother-1816", sans-serif;
+    color: rgb(255,255,255);
+    padding: 0.4em;
+    margin-top: 2em;
+    background-color: rgb(70,70,70);
+    text-transform: uppercase;
+    font-size: .75em;
+}
+
+
+
+
+@media screen and (min-width: 60em){
+
+    div.container{
+    max-width: 70em;
+    margin: auto;
+    }
+     nav ul li {
+        max-width: 70em;
+
+
+    }
+
+    ul.menuItems{
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+   
+}
+
+
