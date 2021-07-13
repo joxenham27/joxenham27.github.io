@@ -1,0 +1,85 @@
+/*CSS document*/
+
+body {
+    font-family: futura-pt, sans-serif;
+    background-color: #DEFADE;
+}
+
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+}
+
+
+
+
+figure {
+    margin: 1em 0em 1.3em 0em;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+header {
+  text-align; left;
+}
+h1 {
+  width: 40%;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+nav ul {
+   padding: 0;
+   margin: auto;
+   text-align: center;
+   word-spacing: 2em;
+}
+    
+a {
+    text-decoration: none;
+}
+
+nav ul li {
+ display: inline;
+ font-family: futura-pt, sans-serif;
+ text-transform: uppercase;
+
+}
+
+h3{
+    font-family: futura-pt, sans-serif;
+    font-size: 1.5em;
+    color:#E1B74D;
+    
+}
+#main-story-header{
+    font-family: futura-pt, sans-serif;
+    font-size: 1.7em;
+    color:#000000;   
+}
+main a{
+      text-decoration: none;
+    color: #000000;
+    
+}
+nav ul li a{
+  text-decoration: none;
+  color: #000000;
+}
+
+nav ul li a:hover {
+    color: #FF0000;
+}
