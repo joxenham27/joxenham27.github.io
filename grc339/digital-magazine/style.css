@@ -168,13 +168,13 @@ section.mainstory p {
 }
 
 section.asidemain {
-  grid-column: 1;
+  grid-column: 4;
   display:flex;
   flex-direction: column;
 }
 
 section.mainart {
-  grid-column: 2/4;
+  grid-column: 1/3;
   display:flex;
   flex-direction: column;
 
