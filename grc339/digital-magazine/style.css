@@ -1,11 +1,18 @@
+/*CSS document*/
+
 body {
     font-family: futura-pt, sans-serif;
-    background-color: #FFFF;
+    background-color: #F5F5F5;
 }
 
 
 div.container {
     max-width: 60em;
+    margin: auto;
+}
+
+div.container-gallery {
+    max-width: 70em;
     margin: auto;
 }
 
@@ -17,6 +24,58 @@ section.logo {
 figcaption {
   text-align: right;
 }
+
+
+
+ div.gallery{
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 1em;
+    }
+
+    section.gallery main{
+        position: relative;
+        overflow: hidden;
+        padding-bottom: calc(75% + 5em);
+    }
+    
+    section.gallery figure{
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+    }
+    
+    section.gallery figcaption{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: #FF0000;
+    }
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+        
+}
+    section.gallery nav{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: .4em;
+    }
+    
+    
+    input{
+        display: none;
+    }
+
 
 figure {
     margin: 1em 0em 1.3em 0em;
@@ -35,6 +94,7 @@ ul {
 }
 header {
   text-align; left;
+
 }
 h1 {
   width: 40%;
@@ -73,16 +133,23 @@ h3{
 #main-story-header{
     font-family: futura-pt, sans-serif;
     font-size: 1.7em;
-    color:#000000;   
+    color:#111111;   
+}
+
+
+main {
+
+  position:relative;
+    overflow:hidden;
 }
 main a{
       text-decoration: none;
-    color: #000000;
+    color: #111111;
     
 }
 nav ul li a{
   text-decoration: none;
-  color: #000000;
+  color: #111111;
 }
 
 nav ul li a:hover {
@@ -90,7 +157,7 @@ nav ul li a:hover {
 } 
 
 h3:hover {
-  color: #000000;
+  color: #111111;
 }
 
 @media screen and (min-width: 60em){
@@ -167,19 +234,22 @@ section.mainstory p {
   margin: 0;
 }
 
-section.asidemain {
+
+article {
+  grid-column: 2;
+  display:flex;
+  flex-direction: column;
+}
+
+
+aside{
   grid-column: 1;
   display:flex;
   flex-direction: column;
-}
-
-section.mainart {
-  grid-column: 2/4;
-  display:flex;
-  flex-direction: column;
+  grid-auto-flow: column;
 
 }
 
 
-}
 
+}
