@@ -11,6 +11,11 @@ div.container {
     margin: auto;
 }
 
+div.newsletter-container {
+  max-width: 60em;
+  margin: auto;
+}
+
 div.container-gallery {
     max-width: 70em;
     margin: auto;
@@ -92,9 +97,7 @@ input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
     }
     
     
-    input{
-        display: none;
-    }
+   
 
 
 figure {
@@ -107,11 +110,6 @@ img {
     padding-top: 1em;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    
-}
 header {
   text-align; left;
 
@@ -184,6 +182,57 @@ h3:hover {
   color: #111111;
 }
 
+
+section.personal-info ul li {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+
+section ul li select {
+  flex: 4 0 32em;
+  box-sizing: border-box;
+}
+
+section.personal-info ul li label {
+  flex: 1 0 8em;
+}
+section.personal-info h2{
+    width: 100%;
+    color: #FF0000;
+}
+
+section.type-of-sub h2{
+    width: 100%;
+    color: #FF0000;
+}
+
+section.type-of-sub ul li {
+  flex: 1 0 15em;
+    margin: 0 0 1em 0;
+  }
+section.type-of-sub ul{
+  padding: 0;
+  list-style-type: none;
+  }
+section.personal-info, section.type-of-sub ul li{
+     font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 60em){
 
   div.container {
@@ -225,6 +274,10 @@ main {
         flex: 0 0 auto;
         margin: 0;
     }
+
+    
+
+
 
 
 
